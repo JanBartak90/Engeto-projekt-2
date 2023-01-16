@@ -1,0 +1,337 @@
+body{
+    font-family: "Roboto";
+    margin: 0;
+}
+
+/* container stránky */
+
+.container{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* breakpoint pro tablet */
+@media only screen and (min-width: 768px) {
+    .container{
+        width: 90%;
+    }
+}
+
+/* breakpoint pro desktop */
+@media only screen and (min-width: 992px) {
+    .container{
+        width: 70%;
+    }
+}
+
+h1{
+    font-size: 3rem;
+}
+
+/* breakpoint pro mobil */
+@media only screen and (min-width: 576px) {
+    h1{
+        font-size: 4rem;
+    }
+}
+
+h2{
+    font-size: 2.5rem;;
+}
+p{
+    font-size: 0.9rem;;
+}
+
+/* hero sekce */
+.hero{
+    background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-position{
+    height: 500px;
+}
+
+.hero-text{
+    text-align: right;
+    color: white;
+}
+
+.hero-text h1{
+    position: relative;
+    top: 300px;
+}
+
+@media only screen and (min-width: 576px) {
+    .hero-text h1{
+        top: 250px;
+    }
+}
+/* sekce about us */ 
+
+.about-us-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 576px) {
+    .about-us-wrapper{
+        display: flex;
+        flex-direction: inherit;
+        align-items: inherit;
+    }
+}
+
+.about-us{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-us.item{
+    width: inherit;
+}
+
+@media only screen and (min-width: 576px) {
+    .about-us.item{
+        width: 50%;
+    }
+}
+
+.about-us.item.item1 {
+    margin-right: 2rem;
+}
+
+.about-us.item.item2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* sekce what we do */
+.what-we-do{
+    background-color: #33292a;
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.carousel-wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 4rem 0rem 2rem 0rem;  
+}
+
+@media only screen and (min-width: 576px) {
+    .carousel-wraper{
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+.carousel.item{
+    margin: 1rem 0rem;
+}
+
+@media only screen and (min-width: 576px) {
+    .carousel.item{
+        margin: 0;
+    }
+}
+
+.carousel-wraper img{
+    width: 50px;
+    height: auto;
+    filter: invert(100%);
+}
+
+/* sekce what our trips */
+.our-trips{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.gallery-wraper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 576px) {
+    .gallery-wraper{
+        flex-direction: row;
+    }
+}
+
+.gallery-item{
+    margin-bottom: 2%;
+}
+
+@media only screen and (min-width: 576px) {
+    .gallery-item{
+        width: 32%;
+    }
+}
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.gallery-item.item5{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sekce contact us */
+.contact-us{
+    background-color: #644b4f;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.contact-us-carousel-wraper{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 576px) {
+    .contact-us-carousel-wraper{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.contact-us-carousel.item.item1{
+    flex-basis: 30%;
+}
+
+.contact-us-carousel.item.item1 h2{
+    margin: 0;
+}
+
+.contact-us-carousel.item.item2{
+    flex-basis: 70%;
+}
+
+@media only screen and (min-width: 576px) {
+    .contact-us-carousel.item.item2{
+        margin-left: 1rem;
+    }
+}
+
+.contact-us-carousel.item.item2 button{
+    padding: 8px 15px;
+    margin: 2rem 0rem;
+    border-radius: 5px;
+    border: 0;
+}
+
+/* sekce reviews */
+.reviews{
+    text-align: center;
+    background-color: #f2f2f2;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.reviews-carousel-wraper{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 576px) {
+    .reviews-carousel-wraper{
+        flex-direction: row;
+    }
+}
+
+.reviews-text .text{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.reviews-carousel-wraper p{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.reviews-carousel.item{
+    margin-top: 55px;
+}
+
+.reviews-img-wrapper{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.reviews-text img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* sekce foto */
+
+.foto-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 576px) {
+    .foto-wrapper{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+.foto-item{
+    height: 300px;
+}
+
+@media only screen and (min-width: 576px) {
+    .foto-item{
+        width: 50%;
+    }
+}
+
+.foto-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* sekce footer */
+
+.footer{
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* barva odkazů */
+
+a:link{
+    color: #efa69d;
+}
+
+a:hover{
+    color: #e9877b;
+}
